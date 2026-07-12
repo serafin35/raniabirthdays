@@ -111,7 +111,6 @@ function tryPlay(){
     }
 }
 
-
 document.addEventListener('click', tryPlay);
 document.addEventListener('keydown', tryPlay);
 
