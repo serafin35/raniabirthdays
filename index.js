@@ -1,5 +1,5 @@
 const birthday = new Date('2026-07-11T00:00:00');
-const ssap = 'a7cf42114ca93dcb83ab3125a50df02e9113c1c910fb66617952e3fb6577fec1';
+const ssap = 'ede081d4e2343f40f31f01534d2cb1843c5a2a4f95b04cb124de0eb37994ed16';
 
 let state = 'COUNTING'; // COUNTING, GATE, REVEAL
 
