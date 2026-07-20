@@ -451,6 +451,7 @@ function moveBirdLeft1(){
 
 setTimeout(moveBirdLeft1, 61500);
 
+var is = 0;
 var chat = 'Make some wishes before you blow out the candle!';
 var speedChat = 90;
 
@@ -459,10 +460,13 @@ document.getElementById('letterClose').addEventListener('click', function chatti
     document.getElementById('chatBubble').classList.remove('invisible');
     document.getElementById('bubbles').classList.remove('invisible');
 
-    for (i = 0; i < chat.length; i++) {
-        document.getElementById('chatter').innerHTML += chat.charAt(i);
+    if (is < chat.length) {
+        document.getElementById('chatter').innerHTML += chat.charAt(is);
+        is++;
         setTimeout(chatting, speedChat);
-    } 
+    } else {
+       isFinished();
+    };
 });
    
 function isFinished(){
